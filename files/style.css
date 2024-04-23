@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lugrasimo&display=swap');
+body {
+	font-family: "Lugrasimo", cursive;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #2b2b2b;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	animation: fade-in 1s ease-out forwards;
+	
+  }
+
+  @keyframes fade-in {
+
+	0% {
+  
+	  opacity: 0;
+  
+	}
+  
+	100% {
+  
+	  opacity: 1;
+  
+	}
+  
+  }
+  
+  h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	color:aliceblue;
+	
+  }
+  
+  form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	color:aliceblue;
+  }
+  
+  label {
+	margin-bottom: 5px;
+	margin-top: 5px;
+  }
+  
+  input[type="number"] {
+	padding: 5px;
+   	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  	button[type="submit"],
+	button[type="reset"] {
+
+  		box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+
+	}
+
+  button[type="submit"] {
+	padding: 10px 20px;
+	margin-top: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  button[type="submit"]:hover,
+  button[type="reset"]:hover
+  {
+	background-color: #3e8e41;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  #result {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #2b2b2b;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 20px;
+	display: none;
+	color: #fff;
+  }
+  
+  #result.show {
+	display: block;
+  }
+
+  button[type="reset"] {
+	padding: 10px 20px;
+	background-color: #f44336;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-top: 10px;
+  }
+  
+  button[type="reset"]:hover {
+	background-color: #da190b;
+  }
+
+  .container {
+
+	/* ...existing styles... */
+  
+	box-shadow: 0 0 100px rgba(21, 202, 199, 0.5);
+	padding: 20px;
+	border-radius: 50px;
+  
+	background-image: linear-gradient(to right, #2d2d2d, #1e423c);
+  
+	background-size: 200% 100%;
+  
+	animation: glow 3s ease-in-out infinite;
+  
+  }
+
+  @keyframes glow {
+
+	0% {
+  
+	  background-position: 100% 0;
+  
+	}
+  
+	50% {
+  
+	  background-position: 0 0;
+  
+	}
+  
+	100% {
+  
+	  background-position: 100% 0;
+  
+	}
+  
+  }
+
+  .bounce-in {
+	animation: bounce-in 1s ease-out forwards;
+  }
+  
+  @keyframes bounce-in {
+	0% {
+	  transform: translateY(10px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  
+  .bounce-out {
+	animation: bounce-out 1s ease-out forwards;
+  }
+  
+  @keyframes bounce-out {
+	0% {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+	100% {
+	  transform: translateY(10px);
+	  opacity: 0;
+	}
+  }
+
+.foot{
+	font-size: 35px;
+	color:#5f797e;
+	width: 377px;
+}
+
+.name{
+	color: #fff;
+	font-family: "Dancing Script", cursive;
+	font-size: 45px;
+}
+
+#result{
+	font-size: 40px;
+	font-weight: 900;
+}
